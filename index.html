@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software Masters - IT Solutions</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💻</text></svg>">
+    
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {}
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .hero {
+            background-image: url('https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="font-sans">
+    <!-- Header Navigation -->
+    <header class="bg-gray-900 text-white sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center">
+                <i class="fas fa-laptop-code text-2xl text-blue-500 mr-2"></i>
+                <h1 class="text-xl font-bold">Software Masters</h1>
+            </div>
+            <nav class="hidden md:block">
+                <ul class="flex space-x-8">
+                    <li><a href="index.html" class="hover:text-blue-400">Home</a></li>
+                    <li><a href="services.html" class="hover:text-blue-400">Services</a></li>
+                    <li><a href="contact.html" class="hover:text-blue-400">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="md:hidden text-xl">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero h-screen flex items-center justify-center text-white relative">
+        <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+        <div class="container mx-auto px-4 z-10 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-4 animate-fadeInDown">Your IT Solutions Partner</h1>
+            <p class="text-xl md:text-2xl mb-8 animate-fadeInUp delay-100">Web Design | IT Consultation | CCTV Installation | Creative Design</p>
+            <a href="contact.html" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-full text-lg transition-all duration-300 inline-block transform hover:scale-105 animate-fadeInUp delay-200 shadow-lg hover:shadow-xl">
+                Get Started Today <i class="fas fa-arrow-right ml-2"></i>
+            </a>
+            <div class="mt-12 animate-bounce">
+                <a href="#services" class="text-white text-sm font-semibold">
+                    <i class="fas fa-chevron-down block mx-auto text-2xl"></i>
+                    Explore Our Services
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Preview -->
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Our Services</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                    <div class="text-blue-500 text-4xl mb-4">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Web Design</h3>
+                    <p class="text-gray-600">Custom, responsive websites tailored to your business needs.</p>
+                    <a href="services.html#web-design" class="text-blue-500 hover:text-blue-700 mt-4 inline-block">Learn more →</a>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                    <div class="text-blue-500 text-4xl mb-4">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">IT Consultation</h3>
+                    <p class="text-gray-600">Expert advice to optimize your IT infrastructure.</p>
+                    <a href="services.html#it-consultation" class="text-blue-500 hover:text-blue-700 mt-4 inline-block">Learn more →</a>
+                </div>
+                
+                <!-- Service 3 -->
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                    <div class="text-blue-500 text-4xl mb-4">
+                        <i class="fas fa-video"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">CCTV Installation</h3>
+                    <p class="text-gray-600">Professional security solutions for your premises.</p>
+                    <a href="services.html#cctv-installation" class="text-blue-500 hover:text-blue-700 mt-4 inline-block">Learn more →</a>
+                </div>
+                
+                <!-- Service 4 -->
+                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                    <div class="text-blue-500 text-4xl mb-4">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Posters & Flyers</h3>
+                    <p class="text-gray-600">Eye-catching designs for your marketing needs.</p>
+                    <a href="services.html#posters-flyers" class="text-blue-500 hover:text-blue-700 mt-4 inline-block">Learn more →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Software Masters</h3>
+                    <p>Your trusted IT solutions provider in Nairobi, Kenya.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="hover:text-blue-400">Home</a></li>
+                        <li><a href="services.html" class="hover:text-blue-400">Services</a></li>
+                        <li><a href="contact.html" class="hover:text-blue-400">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Services</h4>
+                    <ul class="space-y-2">
+                        <li><a href="services.html#web-design" class="hover:text-blue-400">Web Design</a></li>
+                        <li><a href="services.html#it-consultation" class="hover:text-blue-400">IT Consultation</a></li>
+                        <li><a href="services.html#cctv-installation" class="hover:text-blue-400">CCTV Installation</a></li>
+                        <li><a href="services.html#posters-flyers" class="hover:text-blue-400">Posters & Flyers</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Connect</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-white hover:text-blue-400"><i class="fab fa-twitter text-xl"></i></a>
+                        <a href="#" class="text-white hover:text-blue-400"><i class="fab fa-facebook text-xl"></i></a>
+                        <a href="#" class="text-white hover:text-blue-400"><i class="fab fa-instagram text-xl"></i></a>
+                        <a href="#" class="text-white hover:text-blue-400"><i class="fab fa-linkedin text-xl"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center">
+                <p>&copy; 2025 Software Masters. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
